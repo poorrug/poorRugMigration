@@ -1,0 +1,19 @@
+body {
+  background: url(./assets/img/bg01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: url(./assets/img/meme.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
