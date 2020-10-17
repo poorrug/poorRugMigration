@@ -43,6 +43,12 @@ const FAQ: React.FC = () => {
                 The token itself will also be deflationary. Each transfer of $Poor will have a 3% fee. 1% will go to ETH/Poor pool, 1% will go to treasury and 1% will be burnt.
               </StyledListItem>
             </StyledList>
+            <StyledHeading>Contract addresses:</StyledHeading>
+            <StyledList>
+              <StyledListItem>PoorFag:  <a href="https://etherscan.io/token/0xe5868468Cb6Dd5d6D7056bd93f084816c6eF075f">0xe5868468Cb6Dd5d6D7056bd93f084816c6eF075f</a></StyledListItem>
+              <StyledListItem>Migration:  <a href="https://etherscan.io/address/0x4a6c103a1a60f7ba7b7ce832a32d1b747529f8e7">0x4a6c103a1a60f7ba7b7ce832a32d1b747529f8e7</a></StyledListItem>
+              <StyledListItem>PoorRug:  <a href="https://etherscan.io/address/0x9d24b60d5eefe710348cc59173b166a256cbffcd">0x9d24b60d5eefe710348cc59173b166a256cbffcd</a></StyledListItem>
+            </StyledList>
           </CardContent>
         </Card>
       </Container>
