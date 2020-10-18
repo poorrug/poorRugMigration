@@ -48,7 +48,7 @@ const Home: React.FC = () => {
           margin: "-24px auto 48px",
         }}
       >
-        <StyledLink href="https://vaclav-ondrej.medium.com/fag-poor-4510457c41d1">
+        <StyledLink href="/faq">
           Learn more
         </StyledLink>
       </div>
