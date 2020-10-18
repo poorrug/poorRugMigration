@@ -9,10 +9,18 @@ import useYam from "../../hooks/useYam";
 
 import Migrate from './components/Migrate'
 import poorRug from "../../assets/img/logo.png";
+import useTotalSupply from '../../hooks/useTotalSupply'
 
 
 import { OverviewData } from './types'
 import { getStats } from './utils'
+import {bnToDec} from "../../utils";
+import {yamv2} from "../../constants/tokenAddresses";
+import Card from "../../components/Card";
+import CardContent from "../../components/CardContent";
+import Label from "../../components/Label";
+import Value from "../../components/Value";
+import numeral from 'numeral';
 
 const Home: React.FC = () => {
   const yam = useYam();
@@ -21,7 +29,8 @@ const Home: React.FC = () => {
     setStats,
   ] = useState<OverviewData>({});
 
-  const fetchStats = useCallback(async () => {
+    const poorRugTotalSupply = bnToDec(useTotalSupply(yamv2))
+    const fetchStats = useCallback(async () => {
     const statsData = await getStats(yam);
     setStats(statsData);
   }, [yam, setStats]);
@@ -55,30 +64,29 @@ const Home: React.FC = () => {
       <div>
         <Migrate />
         <Spacer />
+          <Card>
+              <CardContent>
+                  <StyledBalance>
+                      <Value value={poorRugTotalSupply ? numeral(poorRugTotalSupply).format('0.00a') : '--'} />
+                      <Label text="Total supply" />
+                  </StyledBalance>
+              </CardContent>
+          </Card>
       </div>
     </Page>
   );
 };
-
-const StyledOverview = styled.div`
-  align-items: center;
-  display: flex;
-  @media (max-width: 768px) {
-    width: 100%;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-`;
-
-const StyledSpacer = styled.div`
-  height: ${(props) => props.theme.spacing[4]}px;
-  width: ${(props) => props.theme.spacing[4]}px;
-`;
 
 const StyledLink = styled.a`
   font-weight: 700l
   text-decoration: none;
   color: ${(props) => props.theme.color.primary.main};
 `;
+
+
+const StyledBalance = styled.div`
+  text-align: center;
+  align-items: center;
+`
 
 export default Home;

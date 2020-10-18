@@ -29,3 +29,13 @@ export const getBalance = async (provider: provider, tokenAddress: string, userA
     return '0'
   }
 }
+
+export const getTotalSupply = async (provider: provider, tokenAddress: string): Promise<string> => {
+  const tokenContract = getContract(provider, tokenAddress)
+  try {
+    const balance: string = await tokenContract.methods.totalSupply().call()
+    return balance
+  } catch (e) {
+    return '0'
+  }
+}

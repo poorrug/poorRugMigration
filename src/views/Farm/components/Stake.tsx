@@ -18,6 +18,7 @@ import useModal from '../../../hooks/useModal'
 import useStake from '../../../hooks/useStake'
 import useStakedBalance from '../../../hooks/useStakedBalance'
 import useTokenBalance from '../../../hooks/useTokenBalance'
+import useTotalSupply from '../../../hooks/useTotalSupply'
 import useUnstake from '../../../hooks/useUnstake'
 
 import { getDisplayBalance } from '../../../utils/formatBalance'
@@ -43,6 +44,7 @@ const Stake: React.FC<StakeProps> = ({
   const { onApprove } = useApprove(tokenContract, poolContract)
 
   const tokenBalance = useTokenBalance(tokenContract.options.address)
+  const tokenSupply = useTotalSupply(tokenContract.options.address)
   const stakedBalance = useStakedBalance(poolContract)
 
   const { onStake } = useStake(poolContract, tokenName);

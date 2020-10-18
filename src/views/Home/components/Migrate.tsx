@@ -14,11 +14,12 @@ import Separator from '../../../components/Separator'
 import Spacer from '../../../components/Spacer'
 import Value from '../../../components/Value'
 
-import { yam as yamAddress } from '../../../constants/tokenAddresses'
+import {yam as yamAddress, yamv2} from '../../../constants/tokenAddresses'
 
 import useAllowance from '../../../hooks/useAllowance'
 import useApprove from '../../../hooks/useApprove'
 import useTokenBalance from '../../../hooks/useTokenBalance'
+import useTotalSupply from '../../../hooks/useTotalSupply'
 import useYam from '../../../hooks/useYam'
 
 import { bnToDec } from '../../../utils'
@@ -35,6 +36,7 @@ const Migrate: React.FC = () => {
   const yam = useYam()
 
   const yamV1Balance = bnToDec(useTokenBalance(yamAddress))
+  const poorRugTotalSupply = bnToDec(useTotalSupply(yamv2))
   const yamV2ReceiveAmount = yamV1Balance
 
   const yamV1Token = useMemo(() => {
