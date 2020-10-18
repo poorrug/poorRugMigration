@@ -48,7 +48,7 @@ const FAQ: React.FC = () => {
               <StyledListItem>PoorFag:  <a href="https://etherscan.io/token/0xe5868468Cb6Dd5d6D7056bd93f084816c6eF075f">0xe5868468Cb6Dd5d6D7056bd93f084816c6eF075f</a></StyledListItem>
               <StyledListItem>Migration:  <a href="https://etherscan.io/address/0x4a6c103a1a60f7ba7b7ce832a32d1b747529f8e7">0x4a6c103a1a60f7ba7b7ce832a32d1b747529f8e7</a></StyledListItem>
               <StyledListItem>PoorRug:  <a href="https://etherscan.io/address/0x9d24b60d5eefe710348cc59173b166a256cbffcd">0x9d24b60d5eefe710348cc59173b166a256cbffcd</a></StyledListItem>
-              <StyledListItem>Uniswap:  <a href="https://info.uniswap.org/pair/0xe0a0d928c95369912ee24cbe9178cfe7f8039c2c">https://info.uniswap.org/pair/0xe0a0d928c95369912ee24cbe9178cfe7f8039c2c</a></StyledListItem>
+              <StyledListItem>Uniswap:  <a href="https://info.uniswap.org/pair/0xe0a0d928c95369912ee24cbe9178cfe7f8039c2c">0xe0a0d928c95369912ee24cbe9178cfe7f8039c2c</a></StyledListItem>
             </StyledList>
           </CardContent>
         </Card>
