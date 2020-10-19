@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
             <StyledHeading>1. How does the migration process work?</StyledHeading>
             <StyledList>
               <StyledListItem>A new $Poor ERC-20 token will be created when you migrate. This will be the governance token of PoorRug.</StyledListItem>
-              <StyledListItem>The migration contract has been audited internally and has been deployed.</StyledListItem>
+              <StyledListItem>The migration contract has been audited internally and has been deployed. The window for migration is open until UTC 25th Oct 23:59:59</StyledListItem>
               <StyledListItem>All $FAG holders can burn $FAG to mint $Poor via a migration contract.</StyledListItem>
               <StyledListItem>The number of Poor tokens created will be based upon the number of $FAG tokens migrated, plus 300K which will serve as liquidity incentives for the LP Pool, this will be announced after migration is closed.</StyledListItem>
             </StyledList>
