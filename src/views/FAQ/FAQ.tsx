@@ -33,7 +33,7 @@ const FAQ: React.FC = () => {
                 $FAG gained a decent amount of attention on Twitter. Unfortunately, the developer of the project (Telegram: @bestetherdapps aka Joe Blow) decided to sell his stake, and claimed he did this without warning in order to not cause a panic sell. Obviously this was not well received by the community and a massive price drop followed, therefore we have decided to create another project that would be 1:1 token swap for $FAG token.
               </StyledListItem>
               <StyledListItem>
-                Why another project? There is already an established community around the $FAG token, it makes sense bring them over to PoorFag. </StyledListItem>
+                Why another project? There is already an established community around the $FAG token, it makes sense bring them over to PoorRug. </StyledListItem>
             </StyledList>
             <StyledHeading>3. What is PoorRug?</StyledHeading>
             <StyledList>
@@ -43,7 +43,15 @@ const FAQ: React.FC = () => {
                 NFTs will be created for those who stake ETH/Poor tokens and will be created with a community owned treasury which will hold a number of crypto assets.
               </StyledListItem>
               <StyledListItem>
+                Vaults will be created to create yield farming strategies and that will auto buy $Poor from Uniswap marketplace. Further reducing the supply of Poors, which in theory should drive the price of Poor up.
+              </StyledListItem>
+              <StyledListItem>
                 The token itself will also be deflationary. Each transfer of $Poor will involve a 3% fee. 1% will go to the ETH/Poor liquidity pool, 1% will go to the treasury and 1% will be burnt.
+              </StyledListItem>
+            </StyledList>
+            <StyledHeading>4. Who is behind PoorRug?</StyledHeading>
+            <StyledList>
+              <StyledListItem>A group of experienced blockchain developers and traders are behind PoorRug. They have decided to stay anonymous at this time. If you feel like you can contribute, feel free to contact one of the admins on telegram.
               </StyledListItem>
             </StyledList>
             <StyledHeading>Contract addresses:</StyledHeading>
