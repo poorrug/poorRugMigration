@@ -70,7 +70,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }
 
   useEffect(() => {
-    if (farm && farm.id === 'ycrv_yam_uni_lp') {
+    if (farm) {
       getStartTime()
     }
   }, [farm, getStartTime])
@@ -79,9 +79,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.id === 'ycrv_yam_uni_lp' && (
-        <StyledCardAccent />
-      )}
       <Card>
         <CardContent>
           <StyledContent>
