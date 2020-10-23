@@ -47,6 +47,8 @@ export class Contracts {
     this.uni_router = new this.web3.eth.Contract(UNIRouterJson);
     this.uni_fact = new this.web3.eth.Contract(UNIFactJson);
     this.yfi = new this.web3.eth.Contract(ERC20Json.abi);
+    this.UNIAmpl = new this.web3.eth.Contract(ERC20Json.abi);
+    this.ycrv = new this.web3.eth.Contract(ERC20Json.abi);
     this.yam = new this.web3.eth.Contract(YAMJson.abi);
 
     this.yfi_pool = new this.web3.eth.Contract(YFIPoolJson.abi);
@@ -92,6 +94,7 @@ export class Contracts {
     this.timelock.setProvider(provider);
     const contracts = [
       { contract: this.yfi_pool, json: YFIPoolJson },
+      { contract: this.yam, json: YAMJson },
     ]
 
     contracts.forEach(contract => this.setContractProvider(
@@ -114,6 +117,7 @@ export class Contracts {
   setDefaultAccount(
     account
   ) {
+    this.yam.options.from = account;
     this.yfi.options.from = account;
     this.weth.options.from = account;
   }
